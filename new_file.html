@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta charset="UTF-8"> 
+
+    <title>New_file</title>
+
+    <!DOCTYPE 板娘>
+    <style type="text/css">
+        #btn{
+            width: 50px;height: 50px;border-radius: 50%;border: none;
+            color: rgb(190, 101, 101);
+            }
+        /* border-radius */
+    </style>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html, body{
+            font-size: 100%;
+            font-family: 'Open Sans', sans-serif;
+            background:#ffffff;
+            margin: 0;
+        }
+    p,ul li,ol li{
+            margin:0;
+            font-size:14px;
+        }
+    li{
+      display:inline-block;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Oswald', sans-serif;
+        margin:0;
+    }
+    ul,label{
+        margin:0;
+        padding:0;
+    }
+    td{
+      width: 150px;
+      font-size: 14px;
+    }
+    body a:hover{
+        text-decoration:none;
+    }
+    /****style****/
+    /*{
+      float: ;
+      height: ;
+      width: ;
+      position: ;
+      top: 0; left: 0; bottom: 0; right: 0; 
+      background: ;
+      border-radius: ;
+      border-style: dotted solid double dashed; 
+      display: ;
+      align: ;
+      font: ;
+      color: ;
+    }*/
+    /*******tip*******/
+    .tip{
+      height: 20%;
+      width: 80%;
+      position: absolute;
+      top: 0; left: 10%; bottom: auto; right: 10%; 
+      font-size: 18px;
+      font-family: 'Courier New', Courier, monospace;
+      color: #da9898;
+    }
+    marquee{
+      position: absolute;
+      top: 10%; left: 0; bottom: auto; right: 0; 
+    }
+    /****main_body****/
+    .main_body{
+      height: 80%;
+      width: 80%;
+      position: absolute;
+      top: 10%; left: 10%; bottom: 10%; right: 10%; 
+      background-color: #cccccc;
+      border-radius: 5px;
+      display: block;
+    }
+    /*******head******/
+    .head{
+      height: 8%;
+      width: 100%;
+      background-color: #5e5e5e;
+      border-radius: 5px 5px 0 0;
+      display: block;
+    }
+    .contain{
+      height: 8%;
+      width: 80%;
+      position: absolute;
+      top: 0; left: 10%; bottom: 0; right: 10%; 
+      text-align: center;
+    }
+    .contain li{
+      font-size: 16px;
+      padding: 15px 15px;
+      color: #969696;
+    }
+    .contain li:hover{
+      color: #ffffff;
+    }
+    /*******name_body******/
+    .name_body{
+      width: 100%;
+      height: 91.7%;
+      background-color: #535353;
+      border-radius: 0 0 5px 5px;
+      display: block;
+    }
+    .document{
+      float: left;
+      width: 65%;
+      height: 100%;
+      background-color: #0e0e0e;
+      border-radius: 0 5px 5px 5px;
+      display: block;
+    }
+    .text_area{
+      float: left;
+      width: 35%;
+      height: 100%;
+      border-radius: 0 0 5px 0;
+      display: block;
+    }
+    .text{
+      color: #bebebe;
+      padding: 8px 0px 0px 20px;
+      font-size: 12px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .text input{
+      background-color: #424242;
+      border-color: #bebebe;
+      border-width: 1px;
+      border-style:double double double double; 
+      border-radius: 5px;
+      height: 30px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .text input:hover{
+      border-color: aqua;
+    }
+    .text select{
+      background-color: #424242;
+      border-color: #bebebe;
+      border-width: 1px;
+      border-style:double double double double; 
+      border-radius: 0 0 0 0;
+      height: 33px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .text select:hover{
+      border-color: aqua;
+    }
+    </style> 
+</head>
+
+<body>
+<div class="tip"><marquee direction="right" scrollamount="10">当前页面没有做自适应，请将页面调至100%食用(。・・)ノ</marquee></div>
+<div class="main_body">
+<div class="head">
+  <div class="contain">
+    <ul>
+        <li class="l1"><i class="fa fa-clock-o" aria-hidden="true"></i>最近使用项</li>
+        <li class="l2">已保存</li>
+        <li style="font-size: 28px;font-weight: 10; padding: 0px 15px;">|</li>
+        <li class="l3">照片</li>
+        <li class="l3">打印</li>
+        <li class="l3">图稿和插图</li>
+        <li class="l3">Web</li>
+        <li class="l3">移动设备</li>
+        <li class="l3">胶片和视频</li>
+    </ul>
+  </div>
+</div>
+<div style="background-color: #0e0e0e;height:0.3%;display: block;"></div>
+<div class="name_body">
+<div class="document">
+
+</div>
+<div class="text_area">
+  <div class="text">预设详细信息</div>
+  <div class="text" style="float: left"><input id="work_title" type="text" value="未标题-1" style="border-style:none none double none;height: 25px;font-size: 20px;"></div>
+  <div class="text"><i class="fa fa-download" aria-hidden="true" style="font-size: 20px;margin:4px 10px; "></i></div>
+  <div class="text">宽度</div>
+  <div class="text" style="float: left"><input type="text" value="297" style="width: 50px"></div>
+  <div class="text"><select style="margin:0px 20px;width: 200px;">
+      <option>像素</option>
+      <option>英寸</option>
+      <option selected="selected">厘米</option>
+      <option>毫米</option>
+      <option>点</option>
+      <option>派卡</option>
+  </select></div>
+  <div style="height: 1px;display:block;"></div>
+  <div style="float:left;">
+  <div class="text">高度</div>
+  <div class="text"><input type="text" value="420" style="width: 50px"></div>
+  </div>
+  <div style="float:left;">
+  <div class="text">方向</div>
+  <div class="text" style="font-size:16px">
+    <i id="c1" onmousedown="choose_dir(this)" class="fa fa-address-book-o" aria-hidden="true" style="font-size: 20px;margin:4px 10px;"></i>
+    <i id="c2" onmousedown="choose_dir(this)" class="fa fa-address-card-o" aria-hidden="true" style="font-size: 20px;margin:4px 10px;"></i>
+  </div>
+  </div>
+  <div>
+  <div class="text">画板</div>
+    <div class="text" style="font-size:16px;margin: 4px 20px">
+      <i id="n1" style="font-size:20px" onmousedown="choose_n(this)" class="fa fa-square-o" aria-hidden="true"></i>
+      <i id="n2" style="font-size:20px;color: aqua" onmousedown="choose_n(this)" class="fa fa-check-square-o" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="text">分辨率</div>
+  <div class="text" style="float: left"><input type="text" value="72" style="width: 50px"></div>
+  <div class="text"><select style="margin:0px 20px;width: 200px;">
+      <option>像素/厘米</option>
+      <option>像素/英寸</option>
+  </select></div>
+  <div class="text">颜色模式</div>
+  <div class="text" style="float: left"><select style="width: 200px;">
+      <option>位图</option>
+      <option>灰度</option>
+      <option selected="selected">RGB颜色</option>
+      <option>CMYK颜色</option>
+      <option>lab颜色</option>
+  </select></div>
+  <div class="text"><select style="margin:0px 20px;width: 50px;">
+      <option>8</option>
+      <option>16</option>
+      <option>32</option>
+  </select></div>
+  <div class="text">背景内容</div>
+  <div class="text" style="float: left"><select onchange="choose_col(this)" style="width: 200px;">
+      <option value="white">白色</option>
+      <option value="black">黑色</option>
+      <option value="#0e0e0e">背景</option>
+      <option value="#535353">透明色</option>
+  </select></div>
+  <div id="b1" style="width: 30px;height: 30px;background-color: rgb(255, 255, 255);display: block;margin: 9px 0px 0px 250px;border-radius: 5px"></div>
+</div>
+</div>
+</div>
+
+<div>
+<div class="waifu">
+  <div class="waifu-tips"></div>
+  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+  <div class="waifu-tool">
+      <span class="fui-home"></span>
+      <span class="fui-chat"></span>
+      <span class="fui-eye"></span>
+      <span class="fui-user"></span>
+      <span class="fui-photo"></span>
+      <span class="fui-info-circle"></span>
+      <span class="fui-cross"></span>
+  </div>
+</div>
+</div>
+<script src="assets/waifu-tips.js"></script>
+<script src="assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
+<script type="text/javascript">
+c1.style.color="aqua";
+n2.style.display="none";
+
+function choose_dir(o)
+{
+  if(parseInt(o.id[1])==2)
+  {
+    c1.style.color="#bebebe";
+    c2.style.color="aqua";
+  }
+  else
+  {
+    c2.style.color="#bebebe";
+    c1.style.color="aqua";
+  }
+}
+
+function choose_n(o)
+{
+  if(parseInt(o.id[1])==1)
+  {
+    n2.style.display="block";
+    n1.style.display="none";
+  }
+  else
+  {
+    n2.style.display="none";
+    n1.style.display="block";
+  }
+}
+function choose_col(obj)
+{
+  var index=obj.selectedIndex;
+  var val = obj.options[index].value;
+  b1.style.backgroundColor=val; 
+}
+</script>
+</body>
+</html>
